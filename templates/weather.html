@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Information</title>
+</head>
+<body>
+    <h1>Weather Information</h1>
+    {% if weather_info %}
+        <p>Temperature in {{ weather_info.city }} is at: <span style="color:{{ weather_info.color }}">{{ weather_info.temperature }} Celsius</span></p>
+    {% else %}
+        <p>Failed to retrieve weather information.</p>
+    {% endif %}
+</body>
+</html>
