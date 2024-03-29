@@ -4,10 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .temperature {
+            font-size: 24px;
+        }
+        .earth-weather {
+            font-size: 18px;
+            color: #0066cc; /* Blue color */
+            text-decoration: none;
+        }
+        .earth-weather:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <h1>Weather Information</h1>
-    <p>{{ weather_info }}</p>
-    <a href="/earth/weather">Earth Weather</a>
+    <p class="temperature">{{ weather_info }}</p>
+    <a href="https://earth.weather.com" class="earth-weather">Earth Weather</a>
 </body>
 </html>
